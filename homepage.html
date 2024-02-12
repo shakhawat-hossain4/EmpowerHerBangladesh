@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmpowerHerBangladesh</title>
+<style>
+   /* Reset default styles and set the font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+/* Style for the navigation menu */
+nav {
+position: fixed;
+background: #0a0a0a; /* Example color */
+width: 100%;
+padding: 10px 0;
+z-index: 12;
+}
+
+.menu {
+max-width: 1250px;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 20px;
+}
+
+.menu .logo {
+display: flex;
+align-items: center;
+left: 0;
+}
+
+.menu .logo img {
+max-height: 70px; /* Set the maximum height for your logo */
+margin-right: 10px;
+ /* Add some spacing between the logo and text */
+}
+
+.menu .logo a {
+text-decoration: none;
+color: #fff;
+font-size: 24px; /* Adjust the font size as needed */
+font-weight: 600;
+}
+
+.menu ul {
+display: inline-flex;
+}
+
+.menu ul li {
+list-style: none;
+margin-left: 7px;
+}
+
+
+.menu ul li:first-child {
+margin-left: 0px;
+}
+
+.menu ul li a {
+text-decoration: none;
+color: #fff;
+font-size: 18px;
+font-weight: 500;
+padding: 8px 15px;
+border-radius: 5px;
+transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+background: #fff;
+color: black;
+}
+
+/* Style for navigation icons */
+.menu ul li a i {
+  font-size: 20px; /* Adjust the size of the icons */
+  margin-right: 10px; /* Add some spacing between the icon and text */
+  vertical-align: middle; /* Align the icon vertically with the text */
+}
+
+.img {
+background: url('imageofswomen2.jpg') no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+position: relative;
+width: 100%;
+height: 100vh;
+}
+
+.img::before {
+content: '';
+position: absolute;
+height: 100%;
+width: 100%;
+background: rgba(0, 0, 0, 0.4);
+}
+
+.center {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+padding: 0 20px;
+text-align: center;
+}
+
+.center .title {
+color: #fff;
+font-size: 55px;
+font-weight: 600;
+}
+
+.center .sub_title {
+color: #fff;
+font-size: 35px;
+font-weight: 600;
+}
+
+.center .btns {
+margin-top: 20px;
+}
+
+.center .btns button {
+height: 55px;
+width: 170px;
+border-radius: 5px;
+border: none;
+margin: 0 10px;
+font-size: 20px;
+font-weight: 500;
+padding: 0 10px;
+cursor: pointer;
+outline: none;
+transition: all 0.3s ease;
+}
+
+.center .btns button:first-child {
+color: #fff;
+background: none;
+}
+
+.btns button:first-child:hover {
+background: white;
+color: black;
+}
+
+.center .btns button:last-child {
+background: white;
+color: black;
+}
+
+/* Style for the dropdown menu */
+.menu ul li.dropdown {
+position: relative;
+}
+
+.menu ul li.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.menu ul li .dropdown-content {
+display: none;
+position: absolute;
+background-color: #080808; /* Example color */
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+min-width: 160px;
+z-index: 1;
+}
+
+.menu ul li .dropdown-content li {
+padding: 10px;
+text-align: left;
+}
+
+.menu ul li .dropdown-content li a {
+color: #fff;
+text-decoration: none;
+display: block;
+padding: 5px;
+}
+/* Style for the active menu item */
+.menu ul li.active a {
+  background-color: #fff; /* Change to your preferred active background color */
+  color: black; /* Change to your preferred active text color */
+  /* Add any other styles you want for the active item */
+}
+
+
+.menu ul li .dropdown-content li a:hover {
+background-color: #fff;
+color: black;
+}
+footer {
+
+text-align: center;
+background-color:#0a0a0a;;
+color: #fff;
+padding: 10px 0;
+
+}
+.container {
+    position: absolute;
+    
+    left: 180px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.container a {
+    text-align: center;
+    font-size: 3em; /* Adjust the font size as needed */
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1;
+    text-decoration: none;
+    color: #fff;
+}
+
+.container a:nth-child(1) {
+    font-family: Monoton;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #fff,
+        0 0 70px #ff1177,
+        0 0 80px #ff1177,
+        0 0 100px #ff1177,
+        0 0 150px #ff1177;
+    }
+    to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #ff1177,
+        0 0 35px #ff1177,
+        0 0 40px #ff1177,
+        0 0 50px #ff1177,
+        0 0 75px #ff1177;
+    }
+}
+
+</style>
+
+</head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <img src="logo2.png" alt="Logo" >
+        <div class="container">
+          <a href="#">EmpowerHerBangladesh</a>
+      </div>
+      </div>
+      <ul>
+        <!-- Update your navigation links as needed -->
+        <li class = "active"><a href="#">Home</a></li>
+        <li><a href="our services/index.html">Services</a></li>
+        <li><a href="contactus/index.html">Contact</a></li>
+        <li><a href="Feedback/index.html">Feedback</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li class="dropdown">
+          <a href="#">Menu</a>
+          <ul class="dropdown-content">
+            <li><a href="courses pro/home.html" class = "Course">Online Course</a></li>
+            <li><a href="communityforum/index.html" class = "Community Forum">Community Forum</a></li>
+            <li><a href="Resourcelibrary/resourcelibrary.html" class = "Resource Library">Resource Library</a></li>
+            <li><a href="Healthtracker/healthtracker.html" class = "healthtracker">Health Tracker</a></li>
+            <li><a href="women's advertisement/home.html" class = "Adverstisment">Women's Hygine Advertisement</a></li>
+            <li><a href="healthdata/index.html" class = "Personalized Recommendations">Personalized Recommendations</a></li>
+            <li><a href="donar/index.html" class = "Donations">Donations</a></li>
+            <li><a href="Empowerment and Entreprenurship/Entrepreneurship.html" class = "Entrepreneurship & Empowerment">Enterprenurship & Empowerment</a></li>
+
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="img"></div>
+  <div class="center">
+    <div class="title">Empowering women in Bangladesh</div>
+    <div class="sub_title">Join us in making a positive impact in the lives of women across the nation.</div>
+    <div class="btns">
+      <button id="learn-more-button">Learn More</button>
+      <button>Subscribe</button>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2023 EmpowerHerBangladesh - Together for a Brighter Future</p>
+
+  </footer>
+
+<script>
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Check if the user is logged in (for demonstration, we'll use a flag)
+    const userIsLoggedIn = localStorage.getItem("userIsLoggedIn") === "true";
+
+    if (userIsLoggedIn) {
+      // If the user is logged in, display their username
+      const username = localStorage.getItem("userUsername");
+      displayUsername(username);
+    }
+
+    // Function to display the username in the top corner
+    function displayUsername(username) {
+      const usernameElement = document.createElement("div");
+
+      document.body.appendChild(usernameElement);
+    }
+
+    // Function to handle the "Learn More" button click
+    const learnMoreButton = document.getElementById("learn-more-button");
+    learnMoreButton.addEventListener("click", function () {
+      // Replace this with your desired action, e.g., redirect to another page
+      alert("You clicked the Learn More button. Redirect to a new page or perform another action here.");
+    });
+  });
+</script>
+
+
+</body>
+</html>

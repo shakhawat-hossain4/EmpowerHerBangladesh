@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .course-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course-header {
+            padding: 20px;
+            background-color: rgb(244, 66, 229);
+            color: #fff;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            text-align: center;
+        }
+
+        .course-header h2 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        .course-content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .content-left {
+            flex: 2;
+            padding-right: 20px;
+        }
+
+        .content-right {
+            flex: 1;
+        }
+
+        .video {
+            max-width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .course-details {
+            padding-left: 20px;
+        }
+
+        .lesson {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #fff;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .lesson:hover {
+            background-color: rgb(244, 66, 229);
+        }
+
+        .lesson-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-left: 10px;
+            color: #333;
+        }
+
+        .part-lesson {
+            background-color: #ddd;
+            color: #333;
+            padding: 5px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            margin-left: 10px;
+            font-weight: normal;
+        }
+
+        .lesson-details {
+            display: none;
+            padding: 10px;
+        }
+
+        .course-description {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #555;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .course-description:hover {
+            background-color: rgb(244, 66, 229);
+        }
+
+        .notes {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #555;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .notes:hover {
+            background-color: rgb(244, 66, 229);
+        }
+
+        /* Quiz Section Styles */
+        .quiz {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #555;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .quiz:hover {
+            background-color: rgb(244, 66, 229);
+        }
+
+        .quiz h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .quiz p {
+            margin-bottom: 10px;
+        }
+
+        .quiz ol {
+            list-style: decimal;
+            padding-left: 20px;
+        }
+
+        .quiz li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+</head>
+<body>
+    <div class="course-container">
+        <div class="course-header">
+            <h2>Course Title: Self-Defence</h2>
+        </div>
+        <div class="course-content">
+            <div class="content-left">
+                <div class="video">
+                    <video controls>
+                        <source src="self_defence_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="course-description">
+                    <h3>Course Description</h3>
+                    <p>
+                        This course is designed to teach you self-defense techniques and strategies to protect yourself in various situations. You will learn practical skills for personal safety and self-confidence.
+                    </p>
+                </div>
+                <div class="notes">
+                    <h3>Notes</h3>
+                    <p>
+                        These are some important notes for the course. Make sure to review them as you progress through the lessons.
+                    </p>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="course-details">
+                    <div class="lesson">
+                        <div class="lesson-title" onclick="toggleDetails(this)">Lesson 1: Introduction to Self-Defence</div>
+                        <div class="lesson-details">
+                            <p>
+                                This is the content for Lesson 1. In this lesson, you will learn the basic concepts of self-defense and why it's essential in today's world.
+                                <br>
+                                Watch the video: <a href="YOUR_YOUTUBE_LINK_1" target="_blank">Lesson 1 Video</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lesson">
+                        <div class="lesson-title" onclick="toggleDetails(this)">Lesson 2: Basic Techniques</div>
+                        <div class="lesson-details">
+                            <p>
+                                In Lesson 2, you will explore the fundamental self-defense techniques that form the foundation of your training.
+                                <br>
+                                Watch the video: <a href="YOUR_YOUTUBE_LINK_2" target="_blank">Lesson 2 Video</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lesson">
+                        <div class="lesson-title" onclick="toggleDetails(this)">Lesson 3: Defensive Maneuvers</div>
+                        <div class ="lesson-details">
+                            <p>
+                                In Lesson 3, you will learn advanced defensive maneuvers and strategies to protect yourself effectively.
+                                <br>
+                                Watch the video: <a href="YOUR_YOUTUBE_LINK_3" target="_blank">Lesson 3 Video</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lesson">
+                        <div class="lesson-title" onclick="toggleDetails(this)">Lesson 4: Escapes and Holds</div>
+                        <div class="lesson-details">
+                            <p>
+                                In Lesson 4, you will explore techniques for escaping holds and maintaining control in self-defense situations.
+                                <br>
+                                Watch the video: <a href="YOUR_YOUTUBE_LINK_4" target="_blank">Lesson 4 Video</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lesson">
+                        <div class="lesson-title" onclick="toggleDetails(this)">Lesson 5: Situational Awareness</div>
+                        <div class="lesson-details">
+                            <p>
+                                In Lesson 5, you will learn the importance of situational awareness and how to use it to your advantage.
+                                <br>
+                                Watch the video: <a href="YOUR_YOUTUBE_LINK_5" target="_blank">Lesson 5 Video</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lesson">
+                        <div class="lesson-title" onclick="toggleDetails(this)">Lesson 6: Personal Safety</div>
+                        <div class="lesson-details">
+                            <p>
+                                In Lesson 6, you will explore personal safety strategies to help you stay safe in your daily life.
+                                <br>
+                                Watch the video: <a href="YOUR_YOUTUBE_LINK_6" target="_blank">Lesson 6 Video</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz">
+                    <h3>Quiz</h3>
+                    <p>Take the quiz to test your knowledge of self-defense techniques and principles.</p>
+                    <ol>
+                        <li>What is the primary goal of self-defense?</li>
+                        <li>Name one basic self-defense technique.</li>
+                        <li>Why is situational awareness important for personal safety?</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(lessonTitle) {
+            const lessonDetails = lessonTitle.nextElementSibling;
+            lessonDetails.style.display = lessonDetails.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

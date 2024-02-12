@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Library</title>
+    <style>
+/* Reset some default styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('background-image.jpg') center/cover no-repeat;
+    margin: 0;
+    padding: 0;
+    animation: changeBackgroundColor 15s infinite;
+    color: #333; /* Change the default text color */
+}
+
+/* Basic styling */
+header {
+    background-color: #35e1e7;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 36px; /* Increase the heading size for emphasis */
+}
+
+nav {
+    background-color: #913699;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #cb27da;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Use a semi-transparent background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.resource {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.resource:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.resource h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.resource p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Add CSS for two-column layout */
+.resource-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.resource a {
+    display: inline-block;
+    background-color: #cb27da;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.resource a:hover {
+    background-color: #913699;
+}
+
+footer {
+    text-align: center;
+    background-color: #913699;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Search and Filter Styles */
+.search {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #cb27da;
+    border-radius: 5px;
+    color: #333; /* Match the text color */
+}
+
+.search button {
+    padding: 10px 20px;
+    background-color: #cb27da;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search button:hover {
+    background-color: #913699;
+}
+
+.filter {
+    text-align: center;
+}
+
+.filter select {
+    padding: 10px;
+    border: 2px solid #cb27da;
+    border-radius: 5px;
+    color: #333;
+}
+
+/* Keyframes animation for background color */
+@keyframes changeBackgroundColor {
+    0% { background-color: #59ec87; }
+    20% { background-color: #6564a3; }
+    40% { background-color: #c37fc5; }
+    60% { background-color: #f5c77f; }
+    100% { background-color: #d362dd; }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resource Library</h1>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search resources...">
+            <button onclick="searchResources()">Search</button>
+        </div>
+        <div class="filter">
+            <label for="categorySelect">Filter by Category:</label>
+            <select id="categorySelect" onchange="filterResources()">
+                <option value="all">All Categories</option>
+                <option value="education">Education</option>
+                <option value="networking">Networking</option>
+                <option value="support">Support Groups</option>
+                <option value="career">Career Development</option>
+                <option value="business">Entrepreneurship and Business</option>
+                <option value="health">Health and Wellness</option>
+                <option value="legal">Legal Rights and Advocacy</option>
+                <option value="financial">Financial Literacy</option>
+                <option value="personal">Personal Development</option>
+                <option value="community">Community Initiatives</option>
+                <option value="government">Legal and Government Resources</option>
+                <option value="skills">Skills Development</option>
+                <option value="creativity">Art and Creativity</option>
+                <option value="safety">Safety and Security</option>
+                <option value="family">Family and Parenting</option>
+                <option value="empowerment">Empowerment Stories and Interviews</option>
+                <option value="heritage">Cultural and Heritage Resources</option>
+                <!-- Add more categories as needed -->
+            </select>
+        </div>
+        
+    </header>
+    <main>
+      <div class="resource-list" id="resourceList">
+          <!-- Resources will be displayed here dynamically in two columns -->
+      </div>
+   </main>
+  
+    <footer>
+        <p>&copy; 2023 EmpowerHerBangladesh</p> <!-- Updated footer text -->
+    </footer>
+    <script>
+      // Resource data organized as a JSON object
+      const resources = {
+    "networking": [
+        {
+            title: "Women in Leadership Conferences",
+            category: "networking",
+            description: "Attend conferences and connect with influential women leaders.",
+            link: "https://www.tbsnews.net/tags/women-leadership-summit",
+            image: "leadership-conferences.jpg"
+        },
+        {
+         title: "Women Empowerment Mentorship Program",
+         category: "networking",
+         description: "Participate in our Women Empowerment Mentorship Program, where experienced mentors guide you towards personal and professional success.",
+         link: "https://northeastnetwork.org/south-asia-young-womens-leadership-and-mentoring-programme/",
+         image: "women-empowerment-mentorship.jpg"
+}
+
+    ],
+    "education": [
+        {
+            title: "EmpowerHerBangladesh Scholarship Program",
+            category: "education",
+            description: "Apply for scholarships to support your higher education journey.",
+            link: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fallresultbd.com%2Fprime-minister-trust-fund-scholarship%2F&psig=AOvVaw1ipKSxBWV4n3DatO7szreG&ust=1695403957008000&source=images&cd=vfe&opi=89978449&ved=0CBIQjhxqFwoTCLC4hYeevIEDFQAAAAAdAAAAABAS",
+            image: "scholarship.jpg"
+        },
+        {
+            title: "Online Learning Resources",
+            category: "education",
+            description: "Access a variety of online courses tailored for women's empowerment.",
+            link: "https://www.thedailystar.net/business/economy/banks/news/stanchart-launches-online-learning-platform-women-entrepreneurs-3379486",
+            image: "online-learning.webp"
+        },
+    ],
+    "support": [
+        {
+            title: "EmpowerHerBangladesh Support Group",
+            category: "support",
+            description: "Join our support group for women, providing emotional and practical support.",
+            link: "https://bwcci-bd.org/",
+            image: "support-group.jpg"
+        },
+        {
+            title: "Mental Health Resources for Women",
+            category: "support",
+            description: "Access resources for mental health support and well-being.",
+            link: "https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-022-04414-z#:~:text=The%20Women%20Support%20Initiative%20Forum,aired%20without%20fear%20of%20identification.",
+            image: "mental-health.jpg"
+        },
+    ],
+    "career": [
+        {
+            title: "Resume Building Workshops",
+            category: "career",
+            description: "Participate in workshops to create impressive resumes.",
+            link: "https://www.thedailystar.net/tech-startup/news/working-woman-bangladesh-hosts-inaugural-career-workshop-3417056",
+            image: "resume-workshops.webp"
+        },
+        {
+            title: "Job Search Strategies",
+            category: "career",
+            description: "Learn effective job search strategies to advance your career.",
+            link: "https://futurestartup.com/2017/09/19/5-powerful-strategies-help-women-thrive-career-context-bangladesh/",
+            image: "job-search.jpg"
+        },
+    ],
+    // Add other categories and resources similarly
+};
+
+
+      // Function to populate the resource list
+      function populateResources() {
+          const resourceList = document.getElementById("resourceList");
+          resourceList.innerHTML = "";
+
+          for (const category in resources) {
+              const categoryResources = resources[category];
+              const categoryHeader = `<h2>${category.charAt(0).toUpperCase() + category.slice(1)}</h2>`;
+
+              // Create a container for each category to ensure two-column layout
+              const categoryContainer = document.createElement("div");
+              categoryContainer.classList.add("category-container");
+              categoryContainer.innerHTML = categoryHeader;
+
+              categoryResources.forEach((resource) => {
+                  const resourceHTML = `
+                    <section class="resource">
+                        <h3>${resource.title}</h3>
+                        <img src="${resource.image}" alt="${resource.title} Image" class="resource-image" width="300" height="150">
+                        <p>${resource.description}</p>
+                        <a href="${resource.link}" target="_blank">View Resource</a>
+                    </section>
+                  `;
+                  categoryContainer.innerHTML += resourceHTML;
+              });
+
+              // Append the category container to the resource list
+              resourceList.appendChild(categoryContainer);
+          }
+      }
+
+      // Function to filter resources by category
+      function filterResources() {
+          const categorySelect = document.getElementById("categorySelect");
+          const selectedCategory = categorySelect.value.toLowerCase(); // Convert to lowercase
+
+          const categoryContainers = document.querySelectorAll(".category-container");
+          categoryContainers.forEach((container) => {
+              const categoryHeader = container.querySelector("h2").textContent.toLowerCase(); // Convert to lowercase
+
+              if (selectedCategory === "all" || categoryHeader === selectedCategory) {
+                  container.style.display = "block";
+              } else {
+                  container.style.display = "none";
+              }
+          });
+      }
+
+      // Function to search for resources
+      function searchResources() {
+          const searchInput = document.getElementById("searchInput").value.toLowerCase();
+
+          const resourceSections = document.querySelectorAll(".resource");
+          resourceSections.forEach((section) => {
+              const title = section.querySelector("h3").textContent.toLowerCase();
+              const description = section.querySelector("p").textContent.toLowerCase();
+
+              if (title.includes(searchInput) || description.includes(searchInput)) {
+                  section.style.display = "block";
+              } else {
+                  section.style.display = "none";
+              }
+          });
+      }
+
+      // Initial population of resources when the page loads
+      populateResources();
+
+      // Add event listeners for filter and search
+      document.getElementById("categorySelect").addEventListener("change", filterResources);
+      document.getElementById("searchInput").addEventListener("input", searchResources);
+  </script>
+  
+</body>
+</html>

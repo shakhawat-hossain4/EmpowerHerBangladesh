@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Online Education in Bangladesh</title>
+    <link rel="stylesheet" href="coursestyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Learn by yourself with Empower Mentor</h1>
+        <div class="courses">
+            <a href="success.html" class="course">
+                <img src="success.jpg" alt="Success in Life Course">
+                <h2>Success in Life</h2>
+                <p>Discover the keys to gaining success and achieving your goals in life.</p>
+            </a>
+            <a href="selfawarness.html" class="course">
+                <img src="self_awarness.jpg" alt="Self-Awareness Course">
+                <h2>Self-Awareness</h2>
+                <p>Enhance self-awareness and personal growth through this course.</p>
+            </a>
+            <a href="womenpart.html" class="course">
+                <img src="leader.avif" alt="Women Participation Course">
+                <h2>Women Participation</h2>
+                <p>Empower yourself through active participation and leadership.</p>
+            </a>
+            <a href="selfdefence.html" class="course">
+                <img src="self_defence.jpg" alt="Self-Defense Course">
+                <h2>Self-Defense</h2>
+                <p>Learn self-defense techniques to empower yourself and stay safe.</p>
+            </a>
+        </div>
+    </div>
+    <script>
+        const courses = document.querySelectorAll('.course');
+        courses.forEach(course => {
+            course.addEventListener('mouseover', () => {
+                course.classList.add('hovered');
+            });
+            course.addEventListener('mouseout', () => {
+                course.classList.remove('hovered');
+            });
+        });
+    </script>
+</body>
+</html>

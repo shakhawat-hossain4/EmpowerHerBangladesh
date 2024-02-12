@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    margin-right: 20px;
+    height: 300px; /* Add margin to the right of each course */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    margin-right: 20px;
+    height: 300px; /* Add margin to the right of each course */
+}
+.course a {
+    text-decoration: none;
+}
+
+/* Remove the margin from the last course to prevent excessive space */
+.course:last-child {
+    margin-right: 0;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+}
+
+.course img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.course h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.course p {
+    font-size: 16px;
+    color: #555;
+}
+
+.hovered {
+    transform: translateY(0);
+}
+
+
+/* Remove the margin from the last course to prevent excessive space */
+.course:last-child {
+    margin-right: 0;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+}
+
+.course img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.course h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.course p {
+    font-size: 16px;
+    color: #555;
+}
+
+.hovered {
+    transform: translateY(0);
+}

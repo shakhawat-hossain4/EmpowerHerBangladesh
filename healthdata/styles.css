@@ -1,0 +1,176 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Page header styles */
+h1 {
+    text-align: center;
+    background-color: #007BFF; /* Blue background */
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+    font-size: 28px; /* Larger header font size */
+}
+
+/* List of experts */
+ul#experts-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul#experts-list li {
+    cursor: pointer;
+    padding: 15px;
+    border: 2px solid #007BFF; /* Blue border */
+    margin: 10px;
+    background-color: #fff; /* White background */
+    transition: transform 0.2s, box-shadow 0.3s;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+ul#experts-list li:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger box shadow */
+}
+
+/* Expert details styles */
+#expert-details {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #007BFF; /* Blue border */
+    background-color: #fff; /* White background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 800px; /* Limit maximum width */
+    text-align: center;
+}
+
+/* Expert name styles */
+#expert-name {
+    font-size: 28px; /* Larger font size */
+    color: #333; /* Dark text color */
+    margin-bottom: 10px;
+}
+
+/* Expert picture styles */
+#expert-picture {
+    max-width: 100%; /* Ensure the image fits within its container */
+    max-height: 300px; /* Limit the maximum height of the image */
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-bottom: 10px;
+}
+
+/* Expert category styles */
+#expert-category {
+    color: #555; /* Subdued text color */
+    font-size: 18px; /* Font size */
+}
+
+/* Expert education styles */
+#expert-education {
+    color: #555; /* Subdued text color */
+    font-size: 18px; /* Font size */
+}
+
+/* Expert contact styles */
+#expert-contact {
+    color: #555; /* Subdued text color */
+    font-size: 18px; /* Font size */
+}
+
+/* Expert recommendation styles */
+#expert-recommendation {
+    margin-top: 20px;
+    color: #333; /* Dark text color */
+    font-size: 20px; /* Larger font size */
+}
+
+/* Opinion form styles */
+#opinion-form {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #007BFF; /* Blue border */
+    background-color: #fff; /* White background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 800px; /* Limit maximum width */
+    text-align: center;
+    width: 90%;
+}
+
+/* Opinion text styles */
+#opinion-text {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Font size */
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Submit button styles */
+button {
+    background-color: #007BFF; /* Blue background */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px; /* Larger font size */
+    border-radius: 10px; /* Rounded corners */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Chat messages styles */
+#chat-messages {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f5f5f5; /* Light gray background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 800px; /* Limit maximum width */
+    max-height: 400px; /* Limit maximum height */
+    overflow-y: scroll;
+    width: 90%; /* Enable vertical scrolling if content exceeds max-height */
+    margin-left: 25px; /* Add a left margin to shift the box to the right */
+}
+
+/* Chat input styles */
+#chat-input {
+    width: 90%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Font size */
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Chat send button styles */
+#chat-send-button {
+    background-color: #007BFF; /* Blue background */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px; /* Font size */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 15px;
+    transition: background-color 0.2s; /* Smooth background color transition */
+}
+
+#chat-send-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

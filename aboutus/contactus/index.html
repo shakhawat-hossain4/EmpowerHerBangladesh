@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact Us Page</title>
+  <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <section>
+    
+    <div class="section-header">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>EmpowerHerBangladesh is dedicated to empowering women and girls in Bangladesh. Our mission is to provide educational, economic, and social opportunities that help them thrive and succeed. We believe in gender equality, education, and women's empowerment as catalysts for positive change in our society. Contact us to learn more about our initiatives and how you can get involved.</p>
+        </div>
+    </div>
+    
+    
+    <div class="container">
+      <div class="row">
+        
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            
+            <div class="contact-info-content">
+              <h4>Address</h4>
+              <p> Plot # 15,<br/> Bashundhara R/A ,<br/>Dhaka 1229</p>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            
+            <div class="contact-info-content">
+              <h4>Phone</h4>
+              <p>01403314467</p>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            
+            <div class="contact-info-content">
+              <h4>Email</h4>
+             <p>Empowerherbangladesh@women.org</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+            <form action="contact.php" method="POST" id="contact-form">
+                <h2>Send Message</h2>
+                <div class="input-box">
+                  <input type="text" required="true" name="full-name">
+                  <span>Full Name</span>
+                </div>
+              
+                <div class="input-box">
+                  <input type="email" required="true" name="email">
+                  <span>Email</span>
+                </div>
+              
+                <div class="input-box">
+                  <textarea required="true" name="message"></textarea>
+                  <span>Type your Message...</span>
+                </div>
+              
+                <div class="input-box">
+                  <input type="submit" value="Send" name="submit">
+                </div>
+              </form>
+              <div id="success-message" style="color: green;"></div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Hygiene Products</title>
+    <style>
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ff66b2;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff3399;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+    color: #ff66b2;
+}
+
+
+main {
+    padding: 20px;
+}
+
+/* Product card styles */
+/* Product card styles */
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    width: 30%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 70%; /* Reduced image size */
+    height: auto;
+    border-radius: 8px;
+}
+.product-item:hover img {
+    transform: scale(1.1);
+    }
+
+.product-item h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Gallery styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Change to space-between for equal spacing */
+}
+
+.gallery-item {
+    width: 30%;
+    margin: 20px 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center-align items horizontally */
+}
+
+.gallery-item img {
+    max-width: 95%; /* Adjust to your desired image size */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Form styles */
+form {
+    margin-bottom: 10px;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #ff66b2;
+    color: #fff;
+    padding: 10px 15px; /* Reduced padding */
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Reduced font-size */
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #ff3399;
+}
+
+
+
+</style>
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Women's Hygiene Products</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Featured Products</h2>
+            <div class="product">
+                <div class="product-item">
+                    <img src="sanitary.jpg" alt="Product 1">
+                    <h3>Sanitary Napkins</h3>
+                    <p>High-quality sanitary napkins for your comfort.</p>
+                </div>
+                <div class="product-item">
+                    <img src="tampons.jpg" alt="Product 2">
+                    <h3>Tampons</h3>
+                    <p>Premium tampons designed for maximum protection.</p>
+                </div>
+                <div class="product-item">
+                    <img src="cup.jpg" alt="Product 3">
+                    <h3>Menstrual Cup</h3>
+                    <p>An eco-friendly menstrual cup for your convenience.</p>
+                </div>
+                <!-- Add more product items here -->
+                <div class="product-item">
+                    <img src="ultathin.webp" alt="Product 4">
+                    <h3>Ultra-Thin Pads</h3>
+                    <p>Ultra-thin pads for a discreet and comfortable experience.</p>
+                </div>
+                <div class="product-item">
+                    <img src="feminine wipes.jpeg" alt="Product 5">
+                    <h3>Feminine Wipes</h3>
+                    <p>Gentle and refreshing wipes for everyday use.</p>
+                </div>
+                <div class="product-item">
+                    <img src="hygine.jpeg" alt="Product 6">
+                    <h3>Organic Hygiene</h3>
+                    <p>Organic and chemical-free hygiene products.</p>
+                </div>
+               
+            </div>
+        </section>
+
+        <section>
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="enlarge_nsu.jpg" alt="Gallery 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery2.jpeg" alt="Gallery 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="galler3.webp" alt="Gallery 3">
+                </div>
+               
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+
+
+    <script>
+        // Product filtering
+        const showMoreButton = document.getElementById("show-more-button");
+        const hiddenProducts = document.querySelectorAll(".product-item:nth-child(4), .product-item:nth-child(5), .product-item:nth-child(6)");
+
+        showMoreButton.addEventListener("click", () => {
+            hiddenProducts.forEach(product => {
+                product.style.display = "block";
+            });
+            showMoreButton.style.display = "none";
+        });
+
+        // Image gallery lightbox effect
+        const galleryItems = document.querySelectorAll(".gallery-item img");
+        galleryItems.forEach(item => {
+            item.addEventListener("click", () => {
+                // Create a modal to display the clicked image
+                const modal = document.createElement("div");
+                modal.classList.add("modal");
+                modal.innerHTML = `
+                    <span class="close-modal">&times;</span>
+                    <img class="modal-content" src="${item.src}" alt="Gallery Image">
+                `;
+                document.body.appendChild(modal);
+
+                // Close modal when clicking on close button or outside the modal
+                const closeModal = () => {
+                    modal.style.display = "none";
+                    document.body.removeChild(modal);
+                };
+                modal.querySelector(".close-modal").addEventListener("click", closeModal);
+                window.addEventListener("click", (event) => {
+                    if (event.target === modal) {
+                        closeModal();
+                    }
+                });
+            });
+        });
+
+        // Form submission handling
+        const form = document.querySelector("form");
+        form.addEventListener("submit", (event) => {
+            event.preventDefault(); // Prevent the default form submission
+            // You can add code here to handle form submission, e.g., sending data to a server
+            alert("Your message has been sent!"); // Display a confirmation message
+            form.reset(); // Reset the form fields
+        });
+    </script>
+</body>
+
+</html>

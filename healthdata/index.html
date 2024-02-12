@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Personalized Recommendations</title>
+</head>
+<body>
+    <h1>Personalized Recommendations</h1>
+    <ul id="experts-list">
+        <!-- Experts will be loaded here via JavaScript -->
+    </ul>
+    <div id="expert-details">
+        <h2 id="expert-name"></h2>
+        <img id="expert-picture" src="" alt="Expert's Picture">
+        <h3> <span id="expert-category"></span></h3>
+        <h3> <span id="expert-education"></span></h3>
+        <h3> <span id="expert-contact"></span></h3>
+        <p id="expert-recommendation"></p>
+
+        <!-- Chat Interface -->
+        <div id="chat-interface">
+            <h2>Chat with the Expert</h2>
+            <div id="chat-messages"></div>
+            <textarea id="chat-input" rows="4" cols="50" placeholder="Type your message here"></textarea>
+            <button id="chat-send-button" onclick="sendMessage()">Send</button> <!-- Add this line -->
+        </div>
+        
+        
+    </div>
+    
+    <div id="opinion-form">
+        <h2>Share Your Opinion</h2>
+        <textarea id="opinion-text" rows="4" cols="50" placeholder="Write your opinion here"></textarea>
+        <button onclick="submitOpinion()">Submit</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.course-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4285f4; /* Google blue */
+    color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.course-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.content-left {
+    flex: 2;
+    padding-right: 20px;
+}
+
+.content-right {
+    flex: 1;
+}
+
+.video {
+    max-width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #333; /* Dark background color for the video section */
+}
+
+video {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.course-details {
+    padding-left: 20px;
+}
+
+.course h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.lesson {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #fff;
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.lesson:hover {
+    background-color: #4285f4; /* Background color change on hover */
+}
+
+.lesson-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+    color: #333;
+}
+
+.part-lesson {
+    background-color: #ddd;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.course-description {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+    background-color: #fff;
+    transition: background-color 0.3s;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.course-description:hover {
+    background-color: #4285f4;
+}
+
+.notes {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+    background-color: #fff;
+    transition: background-color 0.3s;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.notes:hover {
+    background-color: #4285f4;
+}
+
+/* Quiz Section Styles */
+.quiz {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px; /* Reduce border radius for a smaller box size */
+    padding: 10px; /* Reduce padding for a smaller box size */
+    transition: background-color 0.3s; /* Add a hover effect */
+}
+
+.quiz:hover {
+    background-color: #f2f2f2; /* Background color change on hover */
+}
+
+.quiz h3 {
+    color: #333;
+    font-size: 20px; /* Reduce the font size for the title */
+    margin-bottom: 10px;
+}
+
+.quiz p {
+    margin-bottom: 10px; /* Reduce the margin for paragraphs */
+}
+
+.quiz ol {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+.quiz li {
+    margin: 5px 0; /* Reduce margin for list items */
+}
